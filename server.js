@@ -3,7 +3,10 @@
 // 
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
+
+app.use(cors()) //to handle local request for set up server i.e. heroku
 const rappers = {
 '21 savage':{
     'age': 29,
